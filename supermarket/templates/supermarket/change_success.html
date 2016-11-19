@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Supermarket Automation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .page-header {
+  background-color: #ff9400;
+  margin-top: 0;
+  padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+  color: #ffffff;
+  font-size: 36pt;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lobster', cursive;
+}
+
+.date {
+  color: #828282;
+}
+
+.save {
+  float: right;
+}
+
+.post-form textarea, .post-form input {
+  width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+  color: #ffffff;
+  float: right;
+  font-size: 26pt;
+  margin-right: 20px;
+}
+
+.post {
+  margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+  color: #000000;
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Your Selling Price is Updated</h1>
+  <p>Thank You.</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Cost To Company</th>
+        <th>Marked Price</th>
+        <th>Selling Price</th>
+        <th>Number of Items in Inventory</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+        <td>{{Product.Prod_ID}}</td>
+        <td>{{Product.Prod_Name}}</td>
+        <td>{{Product.Real_Price_ToCompany}}</td>
+        <td>{{Product.Marked_Price_OnProduct}}</td>
+        <td>{{Product.Selling_Price_ToCustomer}}</td>
+        <td>{{Product.Items_In_Inventory}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

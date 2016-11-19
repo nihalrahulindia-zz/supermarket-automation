@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supermarket Automation</title>
+</head>
+<body>
+Please enter the details below:
+
+<h1>Form Fields:</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Submit</button>
+    </form>
+
+</body>
+</html>
